@@ -8,10 +8,7 @@ function App() {
 
   return (
     <>
-     <div>
-      <h1 className='text-4xl text-black font-bold'>my name is arafat rahman sani</h1>
-      <button className='btn btn-primary'>Book</button>
-     </div>
+     
     </>
   )
 }
