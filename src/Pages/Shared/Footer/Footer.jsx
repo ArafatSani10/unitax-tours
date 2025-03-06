@@ -3,7 +3,7 @@ import { FaFacebookMessenger, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="footer bg-purple-950 text-white p-10">
+        <footer className="footer  bg-purple-950 text-white max-sm:p-5 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 {/* Left Section with Logo and Social Links */}
                 <nav className="flex flex-col items-center md:items-start">
