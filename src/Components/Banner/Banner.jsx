@@ -17,7 +17,7 @@ const settings = {
 
 const Banner = () => {
   return (
-    <div className="relative  ">
+    <div className="relative md:p-10 max-sm:p-3  ">
       <Slider {...settings}>
         <div className="w-full ">
           <div className="relative ">

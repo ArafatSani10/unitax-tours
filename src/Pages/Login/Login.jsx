@@ -53,9 +53,9 @@ const Login = () => {
       </div>
 
       {/* Form Container */}
-      <div onClick={handleGoogleSignIn} className="w-full md:w-1/2 border-2 p-5 rounded-xl shadow-xl flex flex-col items-center">
+      <div  className="w-full md:w-1/2 border-2 p-5 rounded-xl shadow-xl flex flex-col items-center">
         {/* Google Login */}
-        <div className="shadow-xl mx-auto flex items-center gap-3 p-5 border-2 rounded-xl hover:bg-orange-400 transition-all duration-800 hover:cursor-pointer justify-center w-full mb-4">
+        <div onClick={handleGoogleSignIn} className="shadow-xl mx-auto flex items-center gap-3 p-5 border-2 rounded-xl hover:bg-orange-400 transition-all duration-800 hover:cursor-pointer justify-center w-full mb-4">
           <FaGoogle size={24} />
           <span className="font-bold text-xl">Login With Google</span>
         </div>
