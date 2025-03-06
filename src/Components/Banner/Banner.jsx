@@ -17,7 +17,7 @@ const settings = {
 
 const Banner = () => {
   return (
-    <div className="relative ">
+    <div className="relative  ">
       <Slider {...settings}>
         <div className="w-full ">
           <div className="relative ">
@@ -72,7 +72,7 @@ const Banner = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
             <div className="absolute inset-0 flex justify-center items-center text-center text-white">
               <h2 className="text-3xl font-bold uppercase">
-              Landscapes
+                Landscapes
               </h2>
             </div>
           </div>
