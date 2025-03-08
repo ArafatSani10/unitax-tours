@@ -129,3 +129,6 @@ const PackagesCard = ({ tour }) => {
 };
 
 export default PackagesCard;
+
+
+

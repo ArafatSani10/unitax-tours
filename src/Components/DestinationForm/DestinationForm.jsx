@@ -32,7 +32,7 @@ const DestinationForm = () => {
             .then((data) => {
                 console.log(data);
                 if (data.insertedId) {
-                    Swal.fire("Data sent to MongoDB!");
+                    Swal.fire("Data sent to Destination Page from Navbar!");
 
                     navigate('/destination');
                 }
@@ -92,7 +92,7 @@ const DestinationForm = () => {
                     />
                 </div>
 
-                <button className="btn mt-6">Submit</button>
+                <button className="btn bg-yellow-400 text-white mt-6">Submit</button>
             </div>
 
             

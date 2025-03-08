@@ -17,6 +17,7 @@ import DetailsThree from "../Components/CheckoutPackage/DetailsThree";
 import Destination from "../Components/Destination/Destination";
 import DestinationForm from "../Components/DestinationForm/DestinationForm";
 import NavDestinate from "../Pages/NavDestinate/NavDestinate";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
     {
@@ -31,26 +32,26 @@ export const router = createBrowserRouter([
 
             {
                 path:'/destination',
-                element:<NavDestinate></NavDestinate>,
+                element:<PrivateRoutes><NavDestinate></NavDestinate></PrivateRoutes>,
                 loader:()=>fetch('http://localhost:5000/destination')
                
 
             },
             {
                 path:'/about',
-                element:<About></About>
+                element:<PrivateRoutes><About></About></PrivateRoutes>,
             },
             {
                 path:'/cardone',
-                element:<CardDetails></CardDetails>
+                element:<PrivateRoutes><CardDetails></CardDetails></PrivateRoutes>
             },
             {
                 path:'/cardtwo',
-                element:<DetailsTwo></DetailsTwo>
+                element:<PrivateRoutes><DetailsTwo></DetailsTwo></PrivateRoutes>
             },
             {
                 path:'/cardthree',
-                element:<DetailsThree></DetailsThree>
+                element:<PrivateRoutes><DetailsThree></DetailsThree></PrivateRoutes>
             },
             {
                 path:'/contact',
@@ -58,11 +59,11 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/gallery',
-                element:<Gallery></Gallery>
+                element:<PrivateRoutes><Gallery></Gallery></PrivateRoutes>
             },
             {
                 path:'/tour/:id',
-                element:<PackeagesDetails></PackeagesDetails>,
+                element:<PrivateRoutes><PackeagesDetails></PackeagesDetails></PrivateRoutes>,
                 loader:({params})=>fetch(`http://localhost:5000/tour/${params.id}`)
             },
             {
