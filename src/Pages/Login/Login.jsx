@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { FaGoogle, FaEnvelope, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import lottieanimate from '../../assets/Animation - 1741286731198.json';
 import Lottie from 'lottie-react';
 import AuthContext from '../../context/AuthContext/AuthContext';
@@ -9,11 +9,13 @@ import Swal from 'sweetalert2';
 const Login = () => {
 
   const {signInUser,signInWithGoogle} = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleGoogleSignIn = () =>{
     signInWithGoogle()
     .then(result =>{
       console.log(result.user);
       Swal.fire("Login With Google success..!");
+      navigate('/');
     })
     .catch(error =>{
       console.log(error);

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import AuthContext from '../../../context/AuthContext/AuthContext';
 import Swal from 'sweetalert2';
 
@@ -28,12 +28,21 @@ const Navbar = () => {
 
   const links = (
     <div className="font-bold max-sm:text-xs max-sm:flex-col md:text-[15px] md:flex md:text-black max-sm:text-black ">
+      <NavLink to='/'>
       <li><a>HOME</a></li>
+      </NavLink>
+      <NavLink to='/about'>
       <li><a>ABOUT US</a></li>
+      </NavLink>
+
+      <NavLink to='/gallery'>
+      <li><a>GALLERY</a></li>
+      </NavLink>
       <li><a>DESTINATION</a></li>
       <li><a>PACKAGES</a></li>
-      <li><a>GALLERY</a></li>
+      <NavLink to='/contact'>
       <li><a>CONTACT US</a></li>
+      </NavLink>
     </div>
   );
 

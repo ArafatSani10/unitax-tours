@@ -17,7 +17,7 @@ const settings = {
 
 const Banner = () => {
   return (
-    <div className="relative md:p-10 max-sm:p-3  ">
+    <div className="relative md:p-10 max-sm:p-3 max-sm:mt-36  ">
       <Slider {...settings}>
         <div className="w-full ">
           <div className="relative ">
@@ -28,7 +28,7 @@ const Banner = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
             <div className="absolute inset-0 flex justify-center items-center text-center text-white">
-              <h2 className="text-5xl font-bold"> JOURNEY TO  <br /> <span className="text-red-400 mb-4">EXPLORE</span> </h2>
+              <h2 className="text-5xl font-bold"> JOURNEY TO  <br /> <span className="text-white mb-4">EXPLORE</span> </h2>
             </div>
           </div>
         </div>
