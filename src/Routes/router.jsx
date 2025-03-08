@@ -11,6 +11,12 @@ import AddTour from "../Components/AddOption/AddTour";
 import PackeagesDetails from "../Components/TrendingPackeages/PackeagesDetails";
 import TourPlan from "../Components/TrendingPackeages/TourPlan";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+import CardDetails from "../Components/CheckoutPackage/CardDetails";
+import DetailsTwo from "../Components/CheckoutPackage/DetailsTwo";
+import DetailsThree from "../Components/CheckoutPackage/DetailsThree";
+import Destination from "../Components/Destination/Destination";
+import DestinationForm from "../Components/DestinationForm/DestinationForm";
+import NavDestinate from "../Pages/NavDestinate/NavDestinate";
 
 export const router = createBrowserRouter([
     {
@@ -22,9 +28,29 @@ export const router = createBrowserRouter([
                 element: <Home></Home>,
                 loader:()=>fetch('http://localhost:5000/tour')
             },
+
+            {
+                path:'/destination',
+                element:<NavDestinate></NavDestinate>,
+                loader:()=>fetch('http://localhost:5000/destination')
+               
+
+            },
             {
                 path:'/about',
                 element:<About></About>
+            },
+            {
+                path:'/cardone',
+                element:<CardDetails></CardDetails>
+            },
+            {
+                path:'/cardtwo',
+                element:<DetailsTwo></DetailsTwo>
+            },
+            {
+                path:'/cardthree',
+                element:<DetailsThree></DetailsThree>
             },
             {
                 path:'/contact',

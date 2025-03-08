@@ -2,6 +2,7 @@ import React from 'react';
 import { BsWatch } from 'react-icons/bs';
 import { FaLocationDot } from 'react-icons/fa6';
 import { IoPersonAdd } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const CheckoutPackage = () => {
     return (
@@ -80,9 +81,9 @@ const CheckoutPackage = () => {
 
                     {/* Booking Button */}
                     <div className="text-center">
-                        <button className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg hover:scale-105 hover:shadow-lg transition transform duration-300">
+                        <Link to='/cardthree'><button className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg hover:scale-105 hover:shadow-lg transition transform duration-300">
                             Book Now
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
             </div>
@@ -146,9 +147,9 @@ const CheckoutPackage = () => {
 
                     {/* Booking Button */}
                     <div className="text-center">
-                        <button className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg hover:scale-105 hover:shadow-lg transition transform duration-300">
+                        <Link to='/cardtwo'><button className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg hover:scale-105 hover:shadow-lg transition transform duration-300">
                             Book Now
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
             </div>
@@ -212,9 +213,11 @@ const CheckoutPackage = () => {
 
                     {/* Booking Button */}
                     <div className="text-center">
-                        <button className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg hover:scale-105 hover:shadow-lg transition transform duration-300">
+                       <Link to='/cardone'>
+                       <button className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg hover:scale-105 hover:shadow-lg transition transform duration-300">
                             Book Now
                         </button>
+                       </Link>
                     </div>
                 </div>
             </div>
