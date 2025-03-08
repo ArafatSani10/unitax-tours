@@ -29,27 +29,27 @@ const Navbar = () => {
   const links = (
     <div className="font-bold max-sm:text-xs max-sm:flex-col md:text-[15px] md:flex md:text-black max-sm:text-black ">
       <NavLink to='/'>
-      <li><a>HOME</a></li>
+        <li><a>HOME</a></li>
       </NavLink>
       <NavLink to='/about'>
-      <li><a>ABOUT US</a></li>
+        <li><a>ABOUT US</a></li>
       </NavLink>
 
       <NavLink to='/gallery'>
-      <li><a>GALLERY</a></li>
+        <li><a>GALLERY</a></li>
       </NavLink>
-     <NavLink to='/destination'>
-     <li><a>DESTINATION</a></li>
-     </NavLink>
+      <NavLink to='/destination'>
+        <li><a>DESTINATION</a></li>
+      </NavLink>
       <li><a>PACKAGES</a></li>
       <NavLink to='/contact'>
-      <li><a>CONTACT US</a></li>
+        <li><a>CONTACT US</a></li>
       </NavLink>
     </div>
   );
 
   return (
-    <div className="navbar -mt-32 bg-base-100 shadow-sm">
+    <div className="navbar sticky top-0 z-20 bg-base-100 shadow-sm border-b">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,11 +64,13 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link to='/'> <img
-          src="https://i.ibb.co.com/nsXDGwRz/Screenshot-2025-03-06-161149.png"
-          alt="Logo"
-          className="w-[300px] max-sm:w-[200px]" 
-        /></Link>
+        <Link to='/'>
+          <img
+            src="https://i.ibb.co.com/nsXDGwRz/Screenshot-2025-03-06-161149.png"
+            alt="Logo"
+            className="w-[300px] max-sm:w-[200px]"
+          />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
